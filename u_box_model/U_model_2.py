@@ -54,7 +54,7 @@ for j in range(0, 4):
         Iso_other = M_other*Frac_o/sw_moles[i]
         d238U.append(d238U[i]+(Iso_riv-Iso_anox-Iso_other)*dt)
     carbx[j] = carb_conc
-    dx[j] = d238U
+    dx[j] = d238U[1:]
 # plots
 corol = ['red','blue','green','orange']
 ls = ['-','--',':','-']
@@ -66,17 +66,10 @@ for i in range(0,4):
     plt.plot(carbx[i], t, c=corol[i], linestyle =ls[i])
 plt.show()
 
-
-
-
-
-
-
-
-'''plt.xlabel('d238U')
-plt.ylabel('Time (yr)')
-plt.plot(d1, t, c='red', linestyle='-')
-plt.plot(d2, t, c='blue', linestyle='--')
-plt.plot(d3, t, c='green', linestyle=':')
-plt.plot(d4, t, c='orange', linestyle='-')
-plt.show()'''
+corol = ['red','blue','green','orange']
+ls = ['-','--',':','-']
+plt.xlabel('d238U')
+plt.ylabel('Time(yr)')
+for i in range(0,4):
+    plt.plot(dx[i], t, c=corol[i], linestyle =ls[i])
+plt.show()
