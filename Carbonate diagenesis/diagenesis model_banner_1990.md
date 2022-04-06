@@ -12,7 +12,8 @@
 2. 模型中使用到的基本公式：
 3. 模型来源：
 
- <img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220406211931737.png" alt="image-20220406211931737" style="zoom:70%;" > 
+![image](https://user-images.githubusercontent.com/83357799/162007114-f08c29ed-2b12-40a9-9b0d-0b5e2ba7e80a.png)
+
 
 ## Code
 
@@ -79,7 +80,8 @@ plt.show()
 
 ## Results
 
-<img src="Diagenesis model_banner_1990.jpg" alt="Diagenesis model_banner_1990" style="zoom: 25%;" />
+![Diagenesis model_banner_1990](https://user-images.githubusercontent.com/83357799/162006985-a85ef3ba-9320-418a-b080-876d90ad6738.jpg)
+
 
 ## Analyse
 
