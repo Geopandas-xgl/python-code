@@ -6,7 +6,7 @@ extent = 0.0021
 K_a = 1.45772594752187e-4 #calculated
 K_o = 1.73834440079269e-6 #calculated to reach steady state
 D_u = 1.4 #partition coefficient factor to convert from moles cc to moles sw #1.6 original
-dUriv = 0.05
+dUriv = -0.05
 Frac_a = 0.6
 Frac_o = 0.0294118
 
@@ -43,7 +43,7 @@ for j in range(0, 4):
                 dUriv = -0.8
         else:
             if j == 0:
-                extent = 0.5
+                extent = 0.05
         M_anox = sw_moles[i]*K_a*extent
         M_other = sw_moles[i]*K_o*(1-extent)
         sw_moles.append(sw_moles[i] + (M_riv - M_anox - M_other)*dt)
