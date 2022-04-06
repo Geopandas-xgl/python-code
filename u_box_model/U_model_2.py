@@ -17,7 +17,6 @@ t = list(range(0, int(duration), dt))
 carbx = ['carb0','carb1','carb2','carb3']
 dx = ['d0','d1','d2','d3']
 
-
 # model equations
 for j in range(0, 4):
     sw_conc = [3.3]
@@ -55,6 +54,7 @@ for j in range(0, 4):
         d238U.append(d238U[i]+(Iso_riv-Iso_anox-Iso_other)*dt)
     carbx[j] = carb_conc
     dx[j] = d238U[1:]
+
 # plots
 corol = ['red','blue','green','orange']
 ls = ['-','--',':','-']
