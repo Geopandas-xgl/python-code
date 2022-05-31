@@ -42,7 +42,7 @@ for i in Cso:
         plt.subplot(2,2,3 )
         plt.xscale('log')
         plt.plot(X,RY)
-        plt.title("Sr isotope_40 ppm")
+        plt.title("Sr ratio_40 ppm")
     else:
         plt.subplot(2,2,2)
         plt.xscale('log')
@@ -50,7 +50,7 @@ for i in Cso:
         plt.plot(X,Y)
         plt.subplot(2,2,4)
         plt.xscale('log')
-        plt.title("Sr isotope_1000 ppm")
+        plt.title("Sr ratio_1000 ppm")
         plt.plot(X,RY)
 plt.tight_layout()
 plt.savefig("C:\\Users\\19328\\Desktop\\西交测样\\成岩模拟\\Diagenesis model_banner_1990.jpg", dpi =600, format="jpg")
